@@ -105,6 +105,9 @@
     <None Include="packages.config" />
     <Content Include="Views\Colaborador\Index.cshtml" />
     <Content Include="Views\Colaborador\Cadastro.cshtml" />
+    <Content Include="Views\Estoque\Index.cshtml" />
+    <Content Include="Views\Estoque\Cadastro.cshtml" />
+    <Content Include="Views\Estoque\Editar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -115,7 +118,16 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Estoque\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{93bfa0c4-64db-4451-97d8-6d8e72239e34}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repository\Repository.csproj">
+      <Project>{0e316dfa-15f8-4f77-be9f-1792d57bbd7e}</Project>
+      <Name>Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,6 @@
+T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\Model\bin\Debug\Model.dll
+T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\Model\bin\Debug\Model.pdb
+T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\Model\obj\Debug\Model.csprojAssemblyReference.cache
+T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\Model\obj\Debug\Model.dll
+T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\Model\obj\Debug\Model.pdb

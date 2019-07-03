@@ -36,7 +36,7 @@ namespace Repository
         public List<Estoque> ObterTodos(string busca)
         {
             SqlCommand comando = conexao.Conectar();
-            comando.CommandText = @"SELECT * FROM estoques WHERE nome LIKE @BUSCA";
+            comando.CommandText = "SELECT * FROM estoques WHERE nome LIKE @BUSCA";
             busca = $"% {busca} %";
             comando.Parameters.AddWithValue("@BUSCA", busca);
 
@@ -58,6 +58,51 @@ namespace Repository
             }
 
             return estoques;
+        }
+
+        public bool Apagar(int id)
+        {
+            SqlCommand comando = conexao.Conectar();
+            comando.CommandText = @"DELETE FROM estoques WHERE id = @ID";
+            comando.Parameters.AddWithValue("@ID", id);
+            int quantidadeAfetada = comando.ExecuteNonQuery();
+            comando.Connection.Close();
+            return quantidadeAfetada ==1;
+        }
+
+        public Estoque ObterPeloId(int id)
+        {
+            SqlCommand comando = conexao.Conectar();
+            comando.CommandText = @"SELECT * FROM estoques WHERE id = @ID";
+            comando.Parameters.AddWithValue("@ID", id);
+
+            DataTable tabela = new DataTable();
+            tabela.Load(comando.ExecuteReader());
+
+            if (tabela.Rows.Count ==1)
+            {
+                DataRow linha = tabela.Rows[0];
+                Estoque estoque = new Estoque();
+                estoque.Id = Convert.ToInt32(linha["id"]);
+                estoque.Nome = linha["nome"].ToString();
+                estoque.Quantidade = Convert.ToInt32(linha["quantidade"]);
+                estoque.Valor = Convert.ToDecimal(linha["valor"]);
+                return estoque;
+            }
+            return null;
+        }
+
+        public bool Atualizar(Estoque estoque)
+        {
+            SqlCommand comando = conexao.Conectar();
+            comando.CommandText = @"UPDATE estoques SET nome = @NOME, quantidade = @QUANTIDADE, valor = @VALOR WHERE id = @ID";
+            comando.Parameters.AddWithValue("@ID", estoque.Id);
+            comando.Parameters.AddWithValue("@NOME", estoque.Nome);
+            comando.Parameters.AddWithValue("@QUANTIDADE", estoque.Quantidade);
+            comando.Parameters.AddWithValue("@VALOR", estoque.Valor);
+            int quantidadeAfetada = comando.ExecuteNonQuery();
+            comando.Connection.Close();
+            return quantidadeAfetada == 1;
         }
     }
 }
