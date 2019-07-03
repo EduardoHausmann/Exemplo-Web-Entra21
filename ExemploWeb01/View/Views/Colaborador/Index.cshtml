@@ -1,9 +1,4 @@
-﻿
-@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html>
 <head>
@@ -11,6 +6,22 @@
     <title>Index</title>
 </head>
 <body>
- <h1>Oi</h1>
+    <h1>Oi</h1>
+
+    <form action="/colaborador/cadastro" method="post">
+
+        <div>
+            <label for="campo-nome">Nome</label>
+            <input type="text" name="nome" id="campo-nome" />
+        </div>
+
+        <div>
+            <label for="campo-sobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" id="campo-sobrenome" />
+        </div>
+
+        <button type="submit">Salvar</button>
+
+    </form>
 </body>
 </html>
