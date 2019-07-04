@@ -1,5 +1,5 @@
 ﻿using Model;
-using Repository;
+using Repositorio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,12 +10,11 @@ namespace View.Controllers
 {
     public class EstoqueController : Controller
     {
-        EstoqueRepositorio reposirotio = new EstoqueRepositorio();
-
-        // GET: Estoque
+        EstoqueRepositorio repositorio = new EstoqueRepositorio();
+        
         public ActionResult Index()
         {
-            List<Estoque> estoques = reposirotio.ObterTodos("");
+            List<Estoque> estoques = repositorio.ObterTodos("");
 
             ViewBag.Estoques = estoques;
 
@@ -33,21 +32,20 @@ namespace View.Controllers
             estoque.Nome = nome;
             estoque.Quantidade = quantidade;
             estoque.Valor = valor;
-            int id = reposirotio.Inserir(estoque);
+            int id = repositorio.Inserir(estoque);
             return RedirectToAction("Index");
         }
 
         public ActionResult Apagar(int id)
         {
-            reposirotio.Apagar(id);
+            repositorio.Apagar(id);
             return RedirectToAction("Index");
         }
 
         public ActionResult Editar(int id)
         {
-            Estoque estoque = reposirotio.ObterPeloId(id);
+            Estoque estoque = repositorio.ObterPeloId(id);
             ViewBag.Estoque = estoque;
-
             return View();
         }
 
@@ -59,8 +57,10 @@ namespace View.Controllers
             estoque.Quantidade = quantidade;
             estoque.Valor = valor;
 
-            bool alterou = reposirotio.Atualizar(estoque);
+            bool alterou = repositorio.Atualizar(estoque);
             return RedirectToAction("Index");
+
+
         }
     }
 }

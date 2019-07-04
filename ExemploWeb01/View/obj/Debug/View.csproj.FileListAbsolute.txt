@@ -73,6 +73,10 @@ C:\Users\Alunos\source\repos\ExemploWeb01\View\obj\Debug\View.csproj.CoreCompile
 C:\Users\Alunos\source\repos\ExemploWeb01\View\obj\Debug\View.csproj.CopyComplete
 C:\Users\Alunos\source\repos\ExemploWeb01\View\obj\Debug\View.dll
 C:\Users\Alunos\source\repos\ExemploWeb01\View\obj\Debug\View.pdb
+C:\Users\Alunos\source\repos\ExemploWeb01\View\bin\Model.dll
+C:\Users\Alunos\source\repos\ExemploWeb01\View\bin\Repositorio.dll
+C:\Users\Alunos\source\repos\ExemploWeb01\View\bin\Model.pdb
+C:\Users\Alunos\source\repos\ExemploWeb01\View\bin\Repositorio.pdb
 T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\View.dll.config
 T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\View.dll
 T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\View.pdb
@@ -124,12 +128,16 @@ T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\roslyn\VBCSCompil
 T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\roslyn\VBCSCompiler.exe.config
 T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\Microsoft.Web.Infrastructure.dll
+T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\Model.dll
+T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\Repositorio.dll
 T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\System.Web.Helpers.dll
 T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\System.Web.Mvc.dll
 T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\System.Web.Razor.dll
 T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\System.Web.Webpages.Deployment.dll
 T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\System.Web.Webpages.dll
 T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\System.Web.Webpages.Razor.dll
+T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\Model.pdb
+T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\Repositorio.pdb
 T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\System.Web.Razor.xml
 T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\System.Web.Webpages.xml
 T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\System.Web.Webpages.Deployment.xml
@@ -148,7 +156,3 @@ T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\obj\Debug\View.csproj
 T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\obj\Debug\View.csproj.CopyComplete
 T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\obj\Debug\View.dll
 T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\obj\Debug\View.pdb
-T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\Model.dll
-T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\Repository.dll
-T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\Model.pdb
-T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\View\bin\Repository.pdb

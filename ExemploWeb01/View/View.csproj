@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0E217390-E00F-4C66-924D-0C1D14BEC1A9}</ProjectGuid>
+    <ProjectGuid>{7D095FFB-5559-431F-A05E-AA0BEE3F824E}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -88,6 +88,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\EstoqueCadastro.css" />
+    <Content Include="Content\EstoqueIndex.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -121,12 +123,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{93bfa0c4-64db-4451-97d8-6d8e72239e34}</Project>
+      <Project>{a26648ba-f674-4cf1-8a92-869570f24cf1}</Project>
       <Name>Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Repository\Repository.csproj">
-      <Project>{0e316dfa-15f8-4f77-be9f-1792d57bbd7e}</Project>
-      <Name>Repository</Name>
+    <ProjectReference Include="..\Repositorio\Repositorio.csproj">
+      <Project>{81e89b82-e073-46ca-b499-fd9cb975704a}</Project>
+      <Name>Repositorio</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
@@ -142,9 +144,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>55837</DevelopmentServerPort>
+          <DevelopmentServerPort>49319</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:55837/</IISUrl>
+          <IISUrl>http://localhost:49319/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

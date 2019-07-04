@@ -1,3 +1,9 @@
+C:\Users\Alunos\source\repos\ExemploWeb01\Model\bin\Debug\Model.dll
+C:\Users\Alunos\source\repos\ExemploWeb01\Model\bin\Debug\Model.pdb
+C:\Users\Alunos\source\repos\ExemploWeb01\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\Alunos\source\repos\ExemploWeb01\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\Alunos\source\repos\ExemploWeb01\Model\obj\Debug\Model.dll
+C:\Users\Alunos\source\repos\ExemploWeb01\Model\obj\Debug\Model.pdb
 T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\Model\bin\Debug\Model.dll
 T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\Model\bin\Debug\Model.pdb
 T:\Documentos\GitHub\Exemplo-Web-Entra21\ExemploWeb01\Model\obj\Debug\Model.csprojAssemblyReference.cache

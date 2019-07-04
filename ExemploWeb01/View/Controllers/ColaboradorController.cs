@@ -14,7 +14,8 @@ namespace View.Controllers
             return View();
         }
 
-        public ActionResult Cadastro(string nome, string sobrenome)
+        public ActionResult Cadastro(string nome,
+            string sobrenome)
         {
             string nomeCompleto = $"{nome} {sobrenome}";
             ViewBag.NomeCompleto = nomeCompleto;

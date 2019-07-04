@@ -9,10 +9,14 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/Content/EstoqueIndex.css" />
 </head>
 <body>
     <div>
-        <a href="/estoque/cadastro">Cadastro Estoque</a>
+        <a href="/estoque/cadastro" id="botao-cadastro">
+            Cadastro Estoque
+        </a>
     </div>
 
     <table>
@@ -20,14 +24,14 @@
             <tr>
                 <th>Código</th>
                 <th>Nome</th>
-                <th>Quantidade</th> 
+                <th>Quantidade</th>
                 <th>Valor</th>
                 <th>Ação</th>
             </tr>
         </thead>
-
         <tbody>
-            @for (int  i = 0;  i < ViewBag.Estoques.Count;  i++)
+            @for (int i = 0; i < ViewBag
+                .Estoques.Count; i++)
             {
                 <tr>
                     <td>@ViewBag.Estoques[i].Id</td>
@@ -35,13 +39,12 @@
                     <td>@ViewBag.Estoques[i].Quantidade</td>
                     <td>@ViewBag.Estoques[i].Valor</td>
                     <td>
-                        <a href="/estoque/edifar?id=@ViewBag.Estoques[i].Id">Editar</a>
+                        <a href="/estoque/editar?id=@ViewBag.Estoques[i].Id">Editar</a>
                         <a href="/estoque/apagar?id=@ViewBag.Estoques[i].Id">Apagar</a>
                     </td>
                 </tr>
             }
         </tbody>
-
         <tfoot>
             <tr>
                 <th>Código</th>

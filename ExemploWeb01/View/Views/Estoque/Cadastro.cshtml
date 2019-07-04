@@ -9,29 +9,31 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Cadastro</title>
+    <link rel="stylesheet" href="~/Content/EstoqueCadastro.css" />
 </head>
 <body>
-    <div> 
-        <a href="/estoque">Liata de Estoques</a>
+    <div class="div-titulo"> 
+        <a href="/estoque" id="lista-estoque" class="titulo">Lista de Estoque</a>
     </div>
 
     <form action="/estoque/store" method="post">
-
-        <div>
+        <div class="div-campo">
             <label for="campo-nome">Nome</label>
-            <input type="text"name="nome" id="campo-nome" />
+            <input type="text" name="nome" 
+                   id="campo-nome" class="campo" />
         </div>
-        <div>
-            <label for="campo-quantidade">Quantidade</label>
-            <input type="text" name="quantidade" id="campo-quantidade"/>
+        <div class="div-campo">
+            <label for="campo-quantidade">
+                Quantidade</label>
+            <input type="text" name="quantidade" 
+                   id="campo-quantidade" class="campo"/>
         </div>
-        <div>
+        <div class="div-campo">
             <label for="campo-valor">Valor</label>
-            <input type="text" name="valor" id="campo-quantidade" />
+            <input type="text" name="valor" 
+                   id="campo-valor" class="campo"/>
         </div>
-
-        <button type="submit">Salvar</button>
-
+        <button type="submit" class="botao"g>Salvar</button>
     </form>
-</body> 
+</body>
 </html>
