@@ -3,9 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Repositorio
 {
@@ -46,16 +43,16 @@ namespace Repositorio
             tabela.Load(comando.ExecuteReader());
             comando.Connection.Close();
 
-            for(int i = 0; i < tabela.Rows.Count; i++)
+            for (int i = 0; i < tabela.Rows.Count; i++)
             {
                 DataRow linha = tabela.Rows[i];
                 Estoque estoque = new Estoque();
 
-        estoque.Id = Convert.ToInt32(linha["id"]);
-        estoque.Nome = linha["nome"].ToString();
-        estoque.Quantidade = Convert.ToInt32(linha["quantidade"]);
-        estoque.Valor = Convert.ToDecimal(
-            linha["valor"]);
+                estoque.Id = Convert.ToInt32(linha["id"]);
+                estoque.Nome = linha["nome"].ToString();
+                estoque.Quantidade = Convert.ToInt32(linha["quantidade"]);
+                estoque.Valor = Convert.ToDecimal(
+                    linha["valor"]);
                 estoques.Add(estoque);
             }
             return estoques;
@@ -63,8 +60,8 @@ namespace Repositorio
 
         public bool Apagar(int id)
         {
-        SqlCommand comando = conexao.Conectar();
-            comando.CommandText = @"DELETE FROM estoques WHERE id = @ID" ;
+            SqlCommand comando = conexao.Conectar();
+            comando.CommandText = @"DELETE FROM estoques WHERE id = @ID";
             comando.Parameters.AddWithValue("@ID", id);
             int quantidadeAfetada = comando.ExecuteNonQuery();
             comando.Connection.Close();
@@ -73,21 +70,21 @@ namespace Repositorio
 
         public Estoque ObterPeloId(int id)
         {
-        SqlCommand comando = conexao.Conectar();
+            SqlCommand comando = conexao.Conectar();
             comando.CommandText = @"SELECT * FROM estoques WHERE id = @ID";
             comando.Parameters.AddWithValue("@ID", id);
             DataTable tabela = new DataTable();
             tabela.Load(comando.ExecuteReader());
 
-            if(tabela.Rows.Count == 1)
+            if (tabela.Rows.Count == 1)
             {
                 DataRow linha = tabela.Rows[0];
                 Estoque estoque = new Estoque();
-    estoque.Id = Convert.ToInt32(linha["id"]);
-    estoque.Nome = linha["nome"].ToString();
-    estoque.Quantidade = Convert.ToInt32(linha["quantidade"]);
-    estoque.Valor = Convert.ToDecimal(
-        linha["valor"]);
+                estoque.Id = Convert.ToInt32(linha["id"]);
+                estoque.Nome = linha["nome"].ToString();
+                estoque.Quantidade = Convert.ToInt32(linha["quantidade"]);
+                estoque.Valor = Convert.ToDecimal(
+                    linha["valor"]);
                 return estoque;
             }
             return null;
@@ -95,19 +92,19 @@ namespace Repositorio
 
         public bool Atualizar(Estoque estoque)
         {
-    SqlCommand comando = conexao.Conectar();
-    comando.CommandText = @"UPDATE estoques SET
+            SqlCommand comando = conexao.Conectar();
+            comando.CommandText = @"UPDATE estoques SET
 nome = @NOME,  quantidade = @QUANTIDADE,
 valor = @VALOR WHERE id = @ID";
-    comando.Parameters.AddWithValue("@NOME", 
-        estoque.Nome);
-    comando.Parameters.AddWithValue("@QUANTIDADE"
-        , estoque.Quantidade);
-    comando.Parameters.AddWithValue("@VALOR", 
-        estoque.Valor);
-    comando.Parameters.AddWithValue("@ID", 
-        estoque.Id);
-    int quantidadeAfetada = comando.ExecuteNonQuery();
+            comando.Parameters.AddWithValue("@NOME",
+                estoque.Nome);
+            comando.Parameters.AddWithValue("@QUANTIDADE"
+                , estoque.Quantidade);
+            comando.Parameters.AddWithValue("@VALOR",
+                estoque.Valor);
+            comando.Parameters.AddWithValue("@ID",
+                estoque.Id);
+            int quantidadeAfetada = comando.ExecuteNonQuery();
             comando.Connection.Close();
             return quantidadeAfetada == 1;
         }
